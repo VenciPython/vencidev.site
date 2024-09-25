@@ -1,0 +1,8 @@
+body {
+    background-image: url('path/to/your/image.jpg'); /* Заменете с пътя към вашата снимка */
+    background-size: cover; /* За да покрие целия фон */
+    background-position: center; /* Центрира снимката */
+    background-repeat: no-repeat; /* Не повтаря снимката */
+    height: 100vh; /* Задава височина на body на 100% от височината на екрана */
+    margin: 0; /* Премахва маргини */
+}
