@@ -1,12 +1,12 @@
-body {
-  background-image: url('background.jpg'); /* Сложете пътя към вашето изображение */
-  background-size: cover; /* Задава покриването на цялата площ */
-  background-position: center; /* Центрира изображението */
-  background-repeat: no-repeat; /* Предотвратява повторение на изображението */
-  height: 100vh; /* Височината на body покрива 100% от видимия екран */
-  margin: 0;
+.hero-section {
+  background-image: url('background.jpg'); /* Път до вашето изображение */
+  background-size: cover; /* Изображението ще покрие само тази секция */
+  background-position: center; /* Центриране на изображението */
+  background-repeat: no-repeat; /* Без повторение */
+  height: 400px; /* Височината на секцията (може да я настроите според нуждите си) */
   display: flex;
   justify-content: center; /* Центрира по хоризонтала */
   align-items: center; /* Центрира по вертикала */
   text-align: center;
+  color: white; /* Бял текст върху тъмен фон */
 }
