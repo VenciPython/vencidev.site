@@ -1,16 +1,47 @@
-body {
-  margin: 0;
-  height: 100vh;
+/* Стилизиране на Hero секцията */
+.hero-section {
+  background-image: url('background.jpg'); /* Път до вашето изображение */
+  background-size: cover; /* Изображението ще покрие само тази секция */
+  background-position: center; /* Центриране на изображението */
+  background-repeat: no-repeat; /* Без повторение */
+  height: 400px; /* Височината на секцията */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: center; /* Центрира по хоризонтала */
+  align-items: center; /* Центрира по вертикала */
+  text-align: center; /* Центрира текста вътре в контейнера */
+  color: white; /* Бял текст върху тъмен фон */
 }
 
+/* Стилизиране на body елемента */
+body {
+  margin: 0;
+  height: 100vh; /* Височина на тялото 100% от височината на прозореца */
+  display: flex;
+  justify-content: center; /* Центрира по хоризонтала */
+  align-items: center; /* Центрира по вертикала */
+  text-align: center; /* Центрира текста вътре в тялото */
+}
+
+/* Стилизиране на контейнера с центрирано съдържание */
 .center-content {
-  /* Можете да добавите още стилове тук за центриране на съдържанието */
-  color: white;
+  color: white; /* Цвят на текста */
   background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачен фон */
-  padding: 20px;
-  border-radius: 10px;
+  padding: 20px; /* Вътрешни отстояния */
+  border-radius: 10px; /* Омекотяване на краищата на контейнера */
+}
+
+/* Стилизиране на навигацията */
+nav ul {
+  list-style-type: none; /* Премахва стандартния списъчен стил */
+  padding: 0; /* Премахване на отстоянията */
+}
+
+nav ul li {
+  display: inline; /* Списъчните елементи са на един ред */
+  margin-right: 20px; /* Разстояние между елементите на навигацията */
+}
+
+nav ul li a {
+  text-decoration: none; /* Премахване на подчертаването на линковете */
+  color: blue; /* Цвят на линковете */
 }
