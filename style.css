@@ -2,32 +2,42 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: antiquewhite
+    background-color: antiquewhite;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .main-nav ul {
     list-style: none;
     margin: 0;
     padding: 10px 0;
-    background-color: #0f7bad;
+    background-color: #0e207a;
     display: flex;
     justify-content: center;
-    font-family: "Noto Sans", sans-serif;
 }
 
 .main-nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .main-nav ul li a {
     text-decoration: none;
     color: beige;
+    background-color: #5c8ec3;
     font-size: 30px;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3 ease
 }
 
 .main-nav ul li a:hover {
     text-decoration: underline;
+    background-color: royalblue
+}
+
+.main-nav ul li a:active {
+    background-color: red
 }
 
 /*stylish pictures section
@@ -45,7 +55,6 @@ body {
     */
 
 .hero-h1 {
-    font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 2000;
     font-style: unset;
@@ -67,7 +76,6 @@ h2 {
     font-weight: 2000;
     color: beige;
     background-color: rgb(14, 144, 53);
-
 }
 
 .color-text {
@@ -78,7 +86,6 @@ h2 {
 }
 
 .sofadi-one-regular {
-    font-family: "Sofadi One", system-ui;
     font-weight: 400;
     font-style: normal;
 }
@@ -98,4 +105,40 @@ h2 {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+}
+
+.resume-content {
+    width: 50%;
+    text-align: left;
+    margin-left: 25%;
+    padding: 20;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.summary-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.github-click {
+    display: inline-block;
+    text-decoration: none;
+    color: beige;
+    background-color: #5c8ec3;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 30px;
+    transition: background-color 0.3 ease
+}
+
+.github-click:hover {
+    text-decoration: underline;
+    background-color: royalblue
+}
+
+.github-click:active {
+    background-color: red
 }
