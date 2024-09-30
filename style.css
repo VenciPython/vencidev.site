@@ -54,7 +54,7 @@ body {
 }
     */
 
-.hero-h1 {
+.header-h1 {
     font-optical-sizing: auto;
     font-weight: 2000;
     font-style: unset;
@@ -63,7 +63,7 @@ body {
     margin: 0;
 }
 
-.hero-p {
+.paragraph-p {
     font-family: "Architects Daughter", system-ui;
     color: beige;
     font-size: x-large;
