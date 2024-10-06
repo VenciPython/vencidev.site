@@ -1,7 +1,12 @@
 # vencidev.site
-My first self-created website portfolio, hosted on vencidev.site.
+My first self-created website portfolio using HTML, CSS and JAVASCRIPT, hosted on vencidev.site.
 
-Link to use:
+Built with:
+HTML
+CSS
+Javascript
+
+Link used:
 - https://developer.mozilla.org/en-US/ (named-color)
 - https://colorhunt.co/
 - https://fonts.google.com/
