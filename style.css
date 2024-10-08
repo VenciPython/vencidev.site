@@ -53,6 +53,10 @@ body {
     color: antiquewhite;
 }
     */
+  img {
+      height: 200px;
+      width: 200px;
+    }
 
 .header-h1 {
     font-optical-sizing: auto;
