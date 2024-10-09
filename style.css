@@ -146,3 +146,8 @@ h2 {
 .github-click:active {
     background-color: red
 }
+
+#featured{
+    width: 200px;
+    height: 200px
+}
