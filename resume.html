@@ -4,23 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>VenciDev</title>
+
+    <!--bootstrap link for css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./style-resume.css">
 </head>
 
+
 <body>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!---Navigation menu bar---->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h4 class="text-white">VenciDev</h4>
+                <span class="text-muted">VenciDev</span>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav link text-white" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav link text-white" href="/resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav link text-white" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    <!----End nav bar-->
+
 
     <h2>My resume</h2>
     <div class="resume-content">
         <h2>Summary</h2>
 
-        <p class="summary-text">I am currently working as a legal assistant, but I have a strong passion for coding. Over
+        <p class="summary-text">I am currently working as a legal assistant, but I have a strong passion for coding.
+            Over
             the past 6 months, I have been actively learning JavaScript and have created my first projects with HTML and
             CSS. Currently, I am taking a course in Full Stack Web Development on Udemy, and I am committed to improving
             my skills.
@@ -49,9 +79,18 @@
             <li>1</li>
         </ul>
         <hr>
-        <footer>
-            <p>&copy; 2024 VenciDev | All rights reserved</p>
-        </footer>
+    </div>
+
+
+    <footer>
+        <p class="footer">&copy; 2024 VenciDev | All rights reserved</p>
+    </footer>
+
+
+    <!--It is need to be befor close bpdy tag! js bootsrap link (the button doesnt working without this)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
