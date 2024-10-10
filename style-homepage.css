@@ -1,0 +1,20 @@
+.content {
+    flex: 1;
+    padding-top: 60px;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.architects-daughter-regular h2 {
+    font-family: "Architects Daughter", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.paragraph-p{
+    font-family: "Architects Daughter", system-ui;
+}
+
+.header-h1{
+    font-size: xx-large;
+}
