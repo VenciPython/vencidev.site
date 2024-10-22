@@ -13,3 +13,47 @@
     margin-bottom: 30px;
     font-size: 16px;
 }
+
+#section-one {
+    margin-top: 5%;
+    margin-left: 2%;
+    border: 5px solid black;
+    background-color: rgb(189, 209, 219);
+    padding: 5px;
+    display: inline-block;
+    width: 80%;
+    overflow-wrap: break-word;
+}
+
+#section-two {
+    margin-top: 0.5%;
+    margin-left: 2%;
+    border: 5px solid black;
+    background-color: rgb(189, 209, 219);
+    padding: 5px;
+    display: inline-block;
+    width: 80%;
+    overflow-wrap: break-word;
+}
+
+#section-tree {
+    margin-top: 0.5%;
+    margin-left: 2%;
+    border: 5px solid black;
+    background-color: rgb(189, 209, 219);
+    padding: 5px;
+    display: inline-block;
+    width: 80%;
+    overflow-wrap: break-word;
+}
+
+#section-four {
+    margin-top: 0.5%;
+    margin-left: 2%;
+    border: 5px solid black;
+    background-color: rgb(189, 209, 219);
+    padding: 5px;
+    display: inline-block;
+    width: 80%;
+    overflow-wrap: break-word;
+}
