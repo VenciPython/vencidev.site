@@ -1,8 +1,18 @@
 .content {
-    flex: 1;
     padding-top: 60px;
     text-align: center;
     font-family: "Noto Sans", sans-serif;
+}
+
+.header-h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.paragraph-p{
+    font-family: "Architects Daughter", system-ui;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .architects-daughter-regular h2 {
@@ -11,10 +21,26 @@
     font-style: normal;
 }
 
-.paragraph-p{
-    font-family: "Architects Daughter", system-ui;
+
+.introduction{
+    width: 30%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: bisque;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    border-width:  2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
 }
 
-.header-h1{
-    font-size: xx-large;
+#img{
+    display: block;
+    margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
 }
