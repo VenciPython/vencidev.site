@@ -11,5 +11,5 @@ Link used:
 - https://developer.mozilla.org/en-US/ (named-color)
 - https://colorhunt.co/
 - https://fonts.google.com/
-- https://realfavicongenerator.net/ 
--https://www.freecodecamp.org/
+- https://realfavicongenerator.net/
+- https://www.freecodecamp.org/
