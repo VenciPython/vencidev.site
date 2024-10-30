@@ -24,9 +24,13 @@ h1 h2 {
     display: block;
 }
 
-.footer {
+footer {
     background-color: rgb(29, 22, 22);
     color: snow;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
 }
+
+ul {
+    list-style: none;
+  }
