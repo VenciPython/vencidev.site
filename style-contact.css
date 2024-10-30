@@ -5,6 +5,13 @@
     font-family: "Noto Sans", sans-serif;
 }
 
-#img-contact{
+#img-contact {
     width: 250px;
+}
+
+.social{
+    font-size: x-large;
+    background-color: rgb(102, 250, 164);
+    border-radius: 5%;
+    text-decoration: none;
 }
