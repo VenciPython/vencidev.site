@@ -1,0 +1,175 @@
+html {
+    background-color: #1e2a38;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Навигационна лента */
+.navbar {
+    background-color: #1e2a38;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* Основни стилове */
+h1,
+h2,
+h3,
+p {
+    font-family: "Ubuntu Mono", monospace;
+    color: #1e2a38;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+}
+
+#main-img {
+    width: 25vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.box-content {
+    flex: 1;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #1e2a38;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+.main-img {
+    width: 20vh;
+    height: 20vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.h1-main {
+    font-size: 3.5rem;
+    color: #1e2a38;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Добавяне на сянка */
+    transition: text-shadow 0.3s ease;
+    /* Плавен преход на сянката */
+}
+
+.h1-main:hover {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    /* Промяна на сянката при hover */
+}
+
+
+.h2-main {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Медийни заявки за респонсив дизайн */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        /* Намаляване на размера на текста в навигационната лента на малки екрани */
+    }
+
+    .container {
+        width: 90%;
+        /* Увеличаване на ширината на контейнера на малки екрани */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .h1-main {
+        font-size: 2.5rem;
+        /* Адаптиране на заглавието на малки екрани */
+    }
+
+    .h2-main {
+        font-size: 1.8rem;
+        /* Адаптиране на подзаглавието на малки екрани */
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        /* Адаптиране на текста на малки екрани */
+    }
+
+    p {
+        font-size: 1rem;
+        /* Адаптиране на параграфа на малки екрани */
+    }
+
+    #main-img {
+        width: 15vh;
+        height: 15vh;
+    }
+}
