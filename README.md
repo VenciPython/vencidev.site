@@ -8,8 +8,9 @@ Javascript
 
 Link used:
 - https://css-tricks.com/snippets/css/complete-guide-grid/
-- https://developer.mozilla.org/en-US/ (named-color)
+- https://developer.mozilla.org/en-US/
 - https://colorhunt.co/
 - https://fonts.google.com/
 - https://realfavicongenerator.net/
 - https://www.freecodecamp.org/
+- https://fontawesome.com/search
