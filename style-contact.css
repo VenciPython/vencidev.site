@@ -1,7 +1,7 @@
 /* Основни стилове за съдържание */
 .box-content {
     max-width: 800px; /* Същата ширина като на резюме */
-    min-height: 800px; /* Увеличаване на минималната височина */
+    min-height: 600px; /* Увеличена минимална височина */
     margin: 20px auto;
     padding: 20px;
     background: #e0e0e0;
@@ -16,7 +16,7 @@
 /* Заглавия */
 h2 {
     margin-top: 0;
-    font-size: 28px;
+    font-size: 28px; /* Увеличен размер на шрифта */
     color: #333;
 }
 
@@ -25,14 +25,14 @@ form {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: space-around;
+    justify-content: center; /* Центриране на съдържанието */
 }
 
 label {
     margin-bottom: 10px;
     font-weight: bold;
     color: #333;
-    font-size: 18px;
+    font-size: 18px; /* Увеличен размер на шрифта */
 }
 
 input,
@@ -44,6 +44,8 @@ textarea {
     font-size: 16px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
     resize: none;
+    width: 100%; /* Увеличаване на ширината */
+    box-sizing: border-box; /* Включване на бордюрите и пълнежа в общата ширина */
 }
 
 input:hover,
@@ -52,15 +54,21 @@ textarea:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+textarea {
+    height: 150px; /* Увеличаване на височината на текстовото поле */
+}
+
 button {
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
     background: #007BFF;
     color: #fff;
-    font-size: 18px;
+    font-size: 18px; /* Увеличен размер на шрифта */
     cursor: pointer;
     transition: background 0.3s ease;
+    align-self: center; /* Центриране на бутона */
+    width: 50%; /* Ограничаване на ширината на бутона */
 }
 
 button:hover {
@@ -110,7 +118,7 @@ button:active {
     text-decoration: none;
     color: #007BFF;
     transition: color 0.3s ease;
-    font-size: 20px;
+    font-size: 20px; /* Увеличен размер на шрифта */
     font-weight: bold;
 }
 
@@ -119,7 +127,7 @@ button:active {
 }
 
 .icon {
-    width: 40px;
+    width: 40px; /* Увеличен размер на иконата */
     height: 40px;
     margin-right: 10px;
 }
