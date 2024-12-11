@@ -1,13 +1,13 @@
 /* Основен стил за контактната страница */
 body {
     font-family: 'Ubuntu Mono', monospace; /* Същият шрифт, както в глобалния стил */
-    background-color: #1e2a38; /* Тъмен фон, съвместим с цялостната тема */
+    background-color: #e0e0e0; /* Същият фон като резюмето */
     margin: 0;
     padding: 0;
 }
 
 .box-content {
-    background-color: #e0e0e0; /* Същият фон като резюмето */
+    background-color: white; /* Бял фон за основния контейнер */
     padding: 20px; /* Удобно разстояние вътре */
     margin: 20px auto; /* Центриране на страницата */
     border-radius: 8px; /* Леко закръглени ъгли */
@@ -106,121 +106,4 @@ button:active {
 
 .social-section:hover {
     background: rgba(30, 42, 56, 0.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s ease;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.social:hover {
-    color: #0056b3;
-}
-
-.icon {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-}
-
-/* Респонсив дизайн */
-@media (max-width: 768px) {
-    .box-content {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    label {
-        font-size: 16px;
-    }
-
-    input,
-    textarea {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px 10px;
-    }
-
-    .social-container {
-        flex-direction: column;
-    }
-
-    .social-section {
-        margin-bottom: 15px;
-        padding: 10px;
-    }
-
-    .social {
-        font-size: 16px;
-    }
-
-    .icon {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .box-content {
-        padding: 10px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    label {
-        font-size: 14px;
-    }
-
-    input,
-    textarea {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 6px 8px;
-    }
-
-    .social-section {
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-
-    .social {
-        font-size: 14px;
-    }
-
-    .icon {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-.contact-footer {
-    background: linear-gradient(to top, #1e2a38, #000);
-    color: white;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    width: 100%;
-    position: relative;
-}
+    box-shadow: 0 0 20px rgba(0, 0, 
