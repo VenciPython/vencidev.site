@@ -1,18 +1,19 @@
-/* Основни стилове за съдържание */
+/* Подравнен дизайн за контакт и резюме */
 .box-content {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #e0e0e0;
-    color: #333;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0; /* Същият фон като резюмето */
+    padding: 20px; /* Останал същия */
+    margin: 20px auto; /* Оставен еднакъв */
+    border-radius: 8px; /* Радиусът е същия като на резюмето */
+    max-width: 800px; /* Подравнен с max-width на резюмето */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Идентична сянка */
+    min-height: 500px; /* Същата минимална височина като резюмето */
+    color: #333; /* Текстов цвят */
 }
 
-/* Заглавия */
+/* Заглавие */
 h2 {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 24px; /* Същият стил */
     color: #333;
 }
 
@@ -36,20 +37,13 @@ textarea {
     border-radius: 5px;
     font-size: 16px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    resize: none;
-}
-
-input:hover,
-textarea:hover {
-    background: rgba(30, 42, 56, 0.3);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background: #007BFF;
+    background: #007BFF; /* Същият бутонен цвят */
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -57,20 +51,7 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
-}
-
-button:active {
-    animation: flash 0.5s;
-}
-
-@keyframes flash {
-    0%, 100% {
-        background: #0056b3;
-    }
-    50% {
-        background: #007BFF;
-    }
+    background: #0056b3; /* Същия hover */
 }
 
 /* Стилове за социалните медии */
@@ -83,7 +64,7 @@ button:active {
 .social-section {
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 8px; /* Радиус, подравнен със секциите в резюмето */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1 1 45%;
@@ -91,33 +72,7 @@ button:active {
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.social-section:hover {
-    background: rgba(30, 42, 56, 0.3);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s ease;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.social:hover {
-    color: #0056b3;
-}
-
-.icon {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-}
-
-/* Респонсив дизайн */
+/* Респонсив Дизайн */
 @media (max-width: 768px) {
     .box-content {
         padding: 15px;
@@ -198,16 +153,4 @@ button:active {
         width: 20px;
         height: 20px;
     }
-}
-
-.contact-footer {
-    background: linear-gradient(to top, #1e2a38, #000);
-    color: white;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    width: 100%;
-    position: relative;
 }
