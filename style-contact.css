@@ -1,15 +1,14 @@
 /* Основни стилове за съдържание */
 .box-content {
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 800px; /* Променено на същата ширина като на резюме */
+    margin: 20px auto; /* Променено на същите маргини като на резюме */
     padding: 20px;
     background: #e0e0e0;
-    /* Светъл сив цвят за фона, както в резюмето */
     color: #333;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* Заглавия */
+
 h2 {
     margin-top: 0;
     font-size: 24px;
