@@ -1,44 +1,30 @@
-/* Основен стил за контактната страница */
-body {
-    font-family: 'Ubuntu Mono', monospace; /* Същият шрифт, както в глобалния стил */
-    background-color: #e0e0e0; /* Същият фон като резюмето */
-    margin: 0;
-    padding: 0;
-}
-
+/* Основни стилове за съдържание */
 .box-content {
-    background-color: white; /* Бял фон за основния контейнер */
-    padding: 20px; /* Удобно разстояние вътре */
-    margin: 20px auto; /* Центриране на страницата */
-    border-radius: 8px; /* Леко закръглени ъгли */
-    max-width: 800px; /* Същият максимален размер като резюмето */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Идентична сянка */
-    color: #333; /* Четлив цвят на текста */
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #e0e0e0;
+    /* Светъл сив цвят за фона, както в резюмето */
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 /* Заглавия */
 h2 {
     margin-top: 0;
-    font-size: 28px; /* Съвпада със заглавията в резюмето */
-    color: #333; /* Тъмен цвят за контраст */
-    border-bottom: 1px solid #ddd; /* Подчертаване */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
 }
-
-/* Формуляри */
+/* Стилове за формата */
 form {
     display: flex;
     flex-direction: column;
 }
-
 label {
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
-    font-size: 16px;
 }
-
 input,
 textarea {
     margin-bottom: 20px;
@@ -47,63 +33,157 @@ textarea {
     border-radius: 5px;
     font-size: 16px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    width: 100%; /* Ширина на полетата */
-    box-sizing: border-box; /* За да не излиза извън контейнера */
+    /* Добавен преход за оцветяване и сянка */
+    resize: none;
+    /* Премахване на възможността за преоразмеряване */
 }
-
-input:focus,
-textarea:focus {
-    background: rgba(30, 42, 56, 0.1);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    outline: none;
+input:hover,
+textarea:hover {
+    background: rgba(30, 42, 56, 0.3);
+    /* Леко прозрачен фон при доближаване на мишката */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* Добавена сянка при доближаване на мишката */
 }
-
 button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background: #007BFF; /* Същият бутонен стил */
+    background: #007BFF;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
-
 button:hover {
     background: #0056b3;
 }
-
 button:active {
     animation: flash 0.5s;
 }
-
 @keyframes flash {
-    0%, 100% {
+    0%,
+    100% {
         background: #0056b3;
     }
     50% {
         background: #007BFF;
     }
 }
-
-/* Социални икони */
+/* Стилове за социалните медии */
 .social-container {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
 }
-
 .social-section {
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 8px; /* Радиус за консистентност */
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1 1 45%; /* Гъвкави секции за иконите */
+    flex: 1;
     margin: 0 10px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
+    /* Добавен преход за оцветяване и сянка */
 }
-
 .social-section:hover {
-    background: rgba(30, 42, 56, 0.1);
-    box-shadow: 0 0 20px rgba(0, 0, 
+    background: rgba(30, 42, 56, 0.3);
+    /* Леко прозрачен фон при доближаване на мишката */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* Добавена сянка при доближаване на мишката */
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+}
+.social:hover {
+    color: #0056b3;
+}
+.icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+/* Респонсив дизайн */
+@media (max-width: 768px) {
+    .box-content {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    label {
+        font-size: 16px;
+    }
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    .social-container {
+        flex-direction: column;
+    }
+    .social-section {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    .social {
+        font-size: 16px;
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .box-content {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input,
+    textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+    button {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    .social-section {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .social {
+        font-size: 14px;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+.contact-footer {
+    background: linear-gradient(to top, #1e2a38, #000);
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
