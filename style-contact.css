@@ -1,7 +1,7 @@
 /* Основни стилове за съдържание */
 .box-content {
-    max-width: 800px; /* Същата ширина като на резюме */
-    min-height: 600px; /* Увеличена минимална височина */
+    max-width: 800px;
+    min-height: 600px;
     margin: 20px auto;
     padding: 20px;
     background: #e0e0e0;
@@ -16,8 +16,17 @@
 /* Заглавия */
 h2 {
     margin-top: 0;
-    font-size: 28px; /* Увеличен размер на шрифта */
+    font-size: 28px;
     color: #333;
+}
+
+/* Формат на контейнера */
+.form-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
 }
 
 /* Стилове за формата */
@@ -25,14 +34,14 @@ form {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: center; /* Центриране на съдържанието */
+    justify-content: center;
 }
 
 label {
     margin-bottom: 10px;
     font-weight: bold;
     color: #333;
-    font-size: 18px; /* Увеличен размер на шрифта */
+    font-size: 18px;
 }
 
 input,
@@ -44,8 +53,8 @@ textarea {
     font-size: 16px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
     resize: none;
-    width: 100%; /* Увеличаване на ширината */
-    box-sizing: border-box; /* Включване на бордюрите и пълнежа в общата ширина */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input:hover,
@@ -55,7 +64,7 @@ textarea:hover {
 }
 
 textarea {
-    height: 150px; /* Увеличаване на височината на текстовото поле */
+    height: 150px;
 }
 
 button {
@@ -64,11 +73,11 @@ button {
     border-radius: 5px;
     background: #007BFF;
     color: #fff;
-    font-size: 18px; /* Увеличен размер на шрифта */
+    font-size: 18px;
     cursor: pointer;
     transition: background 0.3s ease;
-    align-self: center; /* Центриране на бутона */
-    width: 50%; /* Ограничаване на ширината на бутона */
+    align-self: center;
+    width: 50%;
 }
 
 button:hover {
@@ -118,7 +127,7 @@ button:active {
     text-decoration: none;
     color: #007BFF;
     transition: color 0.3s ease;
-    font-size: 20px; /* Увеличен размер на шрифта */
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -127,7 +136,7 @@ button:active {
 }
 
 .icon {
-    width: 40px; /* Увеличен размер на иконата */
+    width: 40px;
     height: 40px;
     margin-right: 10px;
 }
