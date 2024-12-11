@@ -1,23 +1,32 @@
-/* Подравнен дизайн за контакт и резюме */
+/* Основен стил за контактната страница */
+body {
+    font-family: 'Ubuntu Mono', monospace; /* Същият шрифт, както в глобалния стил */
+    background-color: #1e2a38; /* Тъмен фон, съвместим с цялостната тема */
+    margin: 0;
+    padding: 0;
+}
+
 .box-content {
     background-color: #e0e0e0; /* Същият фон като резюмето */
-    padding: 20px; /* Останал същия */
-    margin: 20px auto; /* Оставен еднакъв */
-    border-radius: 8px; /* Радиусът е същия като на резюмето */
-    max-width: 800px; /* Подравнен с max-width на резюмето */
+    padding: 20px; /* Удобно разстояние вътре */
+    margin: 20px auto; /* Центриране на страницата */
+    border-radius: 8px; /* Леко закръглени ъгли */
+    max-width: 800px; /* Същият максимален размер като резюмето */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Идентична сянка */
-    min-height: 500px; /* Същата минимална височина като резюмето */
-    color: #333; /* Текстов цвят */
+    color: #333; /* Четлив цвят на текста */
 }
 
-/* Заглавие */
+/* Заглавия */
 h2 {
     margin-top: 0;
-    font-size: 24px; /* Същият стил */
-    color: #333;
+    font-size: 28px; /* Съвпада със заглавията в резюмето */
+    color: #333; /* Тъмен цвят за контраст */
+    border-bottom: 1px solid #ddd; /* Подчертаване */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-/* Стилове за формата */
+/* Формуляри */
 form {
     display: flex;
     flex-direction: column;
@@ -27,6 +36,7 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
+    font-size: 16px;
 }
 
 input,
@@ -37,13 +47,22 @@ textarea {
     border-radius: 5px;
     font-size: 16px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ширина на полетата */
+    box-sizing: border-box; /* За да не излиза извън контейнера */
+}
+
+input:focus,
+textarea:focus {
+    background: rgba(30, 42, 56, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
 }
 
 button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background: #007BFF; /* Същият бутонен цвят */
+    background: #007BFF; /* Същият бутонен стил */
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -51,10 +70,23 @@ button {
 }
 
 button:hover {
-    background: #0056b3; /* Същия hover */
+    background: #0056b3;
 }
 
-/* Стилове за социалните медии */
+button:active {
+    animation: flash 0.5s;
+}
+
+@keyframes flash {
+    0%, 100% {
+        background: #0056b3;
+    }
+    50% {
+        background: #007BFF;
+    }
+}
+
+/* Социални икони */
 .social-container {
     display: flex;
     justify-content: space-around;
@@ -64,15 +96,41 @@ button:hover {
 .social-section {
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 8px; /* Радиус, подравнен със секциите в резюмето */
+    border-radius: 8px; /* Радиус за консистентност */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1 1 45%;
+    flex: 1 1 45%; /* Гъвкави секции за иконите */
     margin: 0 10px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Респонсив Дизайн */
+.social-section:hover {
+    background: rgba(30, 42, 56, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social:hover {
+    color: #0056b3;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+/* Респонсив дизайн */
 @media (max-width: 768px) {
     .box-content {
         padding: 15px;
@@ -153,4 +211,16 @@ button:hover {
         width: 20px;
         height: 20px;
     }
+}
+
+.contact-footer {
+    background: linear-gradient(to top, #1e2a38, #000);
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
 }
