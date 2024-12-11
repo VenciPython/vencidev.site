@@ -4,7 +4,6 @@
     margin: 40px auto;
     padding: 20px;
     background: #e0e0e0;
-    /* Светъл сив цвят за фона, както в резюмето */
     color: #333;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -37,17 +36,13 @@ textarea {
     border-radius: 5px;
     font-size: 16px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    /* Добавен преход за оцветяване и сянка */
     resize: none;
-    /* Премахване на възможността за преоразмеряване */
 }
 
 input:hover,
 textarea:hover {
     background: rgba(30, 42, 56, 0.3);
-    /* Леко прозрачен фон при доближаване на мишката */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    /* Добавена сянка при доближаване на мишката */
 }
 
 button {
@@ -70,12 +65,9 @@ button:active {
 }
 
 @keyframes flash {
-
-    0%,
-    100% {
+    0%, 100% {
         background: #0056b3;
     }
-
     50% {
         background: #007BFF;
     }
@@ -94,17 +86,14 @@ button:active {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1;
+    flex: 1 1 45%;
     margin: 0 10px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    /* Добавен преход за оцветяване и сянка */
 }
 
 .social-section:hover {
     background: rgba(30, 42, 56, 0.3);
-    /* Леко прозрачен фон при доближаване на мишката */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    /* Добавена сянка при доближаване на мишката */
 }
 
 .social {
