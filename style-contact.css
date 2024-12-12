@@ -1,4 +1,10 @@
 /* Основни стилове за съдържание */
+body {
+    font-family: Georgia, serif;
+    background-color: #1e2a38;
+    /* Синкав фон като в резюмето */
+}
+
 .box-content {
     max-width: 800px;
     min-height: 600px;
@@ -26,7 +32,8 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: #f9f9f9; /* Променен на мек бял цвят */
+    background: #f9f9f9;
+    /* Мек бял цвят */
 }
 
 /* Стилове за формата */
@@ -89,9 +96,12 @@ button:active {
 }
 
 @keyframes flash {
-    0%, 100% {
+
+    0%,
+    100% {
         background: #0056b3;
     }
+
     50% {
         background: #007BFF;
     }
@@ -139,6 +149,8 @@ button:active {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    border-radius: 10px;
+    /* Добавено за заоблени върхове */
 }
 
 /* Респонсив дизайн */
