@@ -1,9 +1,11 @@
 /* Стилове за основно оформление */
 html {
-    background-color: #1e2a38;
+    background: linear-gradient(to bottom, #000, #1e2a38);
+    /* Преходен фон от черно към синьо */
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Скрива хоризонталния скрол бар */
+    overflow-x: hidden;
+    /* Скрива хоризонталния скрол бар */
 }
 
 body {
@@ -12,7 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden; /* Скрива хоризонталния скрол бар */
+    overflow-x: hidden;
+    /* Скрива хоризонталния скрол бар */
 }
 
 /* Навигационен бар */
@@ -22,9 +25,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
-    width: 100%; /* Уверява се, че навигационният бар покрива цялата ширина */
-    box-sizing: border-box; /* Включва бордюрите и пълнежа в общата ширина */
+    /* Центриране на бутоните */
+    padding: 10px 20px;
+    /* Увеличаваме малко padding */
+    width: 100%;
+    /* Уверява се, че навигационният бар покрива цялата ширина */
+    box-sizing: border-box;
+    /* Включва бордюрите и пълнежа в общата ширина */
+    position: relative;
+    /* За да може позиционирането на навигационното меню да работи */
+    z-index: 10;
+    /* Задава по-висок индекс за навигационното меню */
 }
 
 .navbar-menu {
@@ -32,6 +43,7 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 .nav-item {
@@ -42,14 +54,28 @@ nav {
     text-decoration: none;
     color: white;
     font-family: "Ubuntu Mono", monospace;
-    font-size: 2rem;
-    padding: 20px;
+    font-size: 1.5rem;
+    /* Намалете размера на текста */
+    padding: 15px;
+    /* Намалете padding-а */
     transition: color 0.3s ease, background 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
+
+.nav-icon {
+    margin-right: 15px;
+    /* Увеличете разстоянието между иконата и текста */
+    font-size: 1.2rem;
+    /* Намалете размера на иконите */
+}
+
 
 .nav-link:hover {
     color: #1e2a38;
     background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
 }
 
 .nav-link:active {
@@ -75,10 +101,15 @@ h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: calc(100vh - 120px); /* Установява височина, която взима под внимание навигацията и футъра */
+    height: calc(100vh - 120px);
+    /* Установява височина, която взима под внимание навигацията и футъра */
     width: 100%;
-    box-sizing: border-box; /* Включва бордюрите и пълнежа в общата ширина */
-    overflow: hidden; /* Скрива вертикалния скрол бар */
+    box-sizing: border-box;
+    /* Включва бордюрите и пълнежа в общата ширина */
+    overflow: hidden;
+    /* Скрива вертикалния скрол бар */
+    z-index: 1;
+    /* По-нисък з-index за съдържанието */
 }
 
 /* Футър */
@@ -93,7 +124,10 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    box-sizing: border-box; /* Включва бордюрите и пълнежа в общата ширина */
+    box-sizing: border-box;
+    /* Включва бордюрите и пълнежа в общата ширина */
+    z-index: 1;
+    /* По-нисък з-index за футъра */
 }
 
 /* Заглавия в основното съдържание */
@@ -129,18 +163,75 @@ li {
 
 /* Респонсив дизайн */
 @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+        padding: 10px;
+        /* Намалено от 15px */
+        background-color: transparent;
+        /* Прозрачен фон */
+        border: none;
+        /* Премахнат бордюр */
+        z-index: 10;
+        /* По-висок z-index за hamburger бутона */
+        border-radius: 5px;
+        /* Леко заобляне */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* 3D ефект */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hamburger:hover {
+        transform: scale(1.1);
+        /* Леко увеличение при поставяне на мишката */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        /* По-дълбок 3D ефект */
+    }
+
     .navbar-menu {
         flex-direction: column;
         align-items: center;
+        background: linear-gradient(to bottom, #000, #1e2a38);
+        /* Преходен фон от черно към синьо */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: none;
+        /* Първоначално скрито меню */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        z-index: 10;
+        /* По-висок z-index за менюто */
+    }
+
+    .navbar-menu.show {
+        display: flex;
+        max-height: 100vh;
+        /* Максимална височина на спуснатото меню */
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
     }
 
     .nav-link {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 15px;
+        width: 100%;
+        text-align: center;
     }
 
-    .container {
-        width: 90%;
+    .box-content {
+        height: auto;
+        background-size: contain;
+        /* за да бъде снимката по-добре видима на мобилни устройства */
+        background-position: center;
     }
 
     h1 {
@@ -168,20 +259,41 @@ li {
     .navbar-menu {
         flex-direction: column;
         align-items: center;
+        padding: 15px 0;
+        background: linear-gradient(to bottom, #000, #1e2a38);
+        /* Преходен фон от черно към синьо */
+        top: 60px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        display: none;
+        /* Първоначално скрито меню */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        z-index: 10;
+        /* По-висок z-index за менюто */
+    }
+
+    .navbar-menu.show {
+        display: flex;
+        max-height: 100vh;
+        /* Максимална височина на спуснатото меню */
+        padding: 15px 0;
     }
 
     .nav-link {
         font-size: 1.5rem;
-        padding: 20px;
-    }
-
-    .container {
-        width: 95%;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
     }
 
     .box-content {
         height: auto;
-        background-size: cover;
+        background-size: contain;
+        /* за да бъде снимката по-добре видима на мобилни устройства */
+        background-position: center;
     }
 
     h1 {
