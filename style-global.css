@@ -232,6 +232,7 @@ li {
         background-size: contain;
         /* за да бъде снимката по-добре видима на мобилни устройства */
         background-position: center;
+        background-color: black;
     }
 
     h1 {
@@ -294,6 +295,7 @@ li {
         background-size: contain;
         /* за да бъде снимката по-добре видима на мобилни устройства */
         background-position: center;
+        background-color: black;
     }
 
     h1 {
