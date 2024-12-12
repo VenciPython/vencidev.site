@@ -3,6 +3,7 @@ html {
     background-color: #1e2a38;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Скрива хоризонталния скрол бар */
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Скрива хоризонталния скрол бар */
 }
 
 /* Навигационен бар */
@@ -21,6 +23,8 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 10px 0;
+    width: 100%; /* Уверява се, че навигационният бар покрива цялата ширина */
+    box-sizing: border-box; /* Включва бордюрите и пълнежа в общата ширина */
 }
 
 .navbar-menu {
@@ -66,15 +70,15 @@ h3 {
 /* Основно съдържание */
 .box-content {
     flex: 1;
-    margin-top: -5px;
-    margin-bottom: -5px;
     text-align: center;
     background-image: url(./main-img.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    height: calc(100vh - 120px); /* Установява височина, която взима под внимание навигацията и футъра */
+    width: 100%;
+    box-sizing: border-box; /* Включва бордюрите и пълнежа в общата ширина */
+    overflow: hidden; /* Скрива вертикалния скрол бар */
 }
 
 /* Футър */
@@ -86,9 +90,10 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 10px 0;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    box-sizing: border-box; /* Включва бордюрите и пълнежа в общата ширина */
 }
 
 /* Заглавия в основното съдържание */
@@ -132,7 +137,6 @@ li {
     .nav-link {
         font-size: 1.2rem;
         padding: 15px;
-        /* Увеличава подложката за по-добра четимост */
     }
 
     .container {
@@ -169,7 +173,6 @@ li {
     .nav-link {
         font-size: 1.5rem;
         padding: 20px;
-        /* Увеличава подложката за по-голяма лекота на натискане */
     }
 
     .container {
